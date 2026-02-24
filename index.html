@@ -1,12 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
 <head>
-    <title>Перенаправлення...</title>
-    <meta http-equiv="refresh" content="0; url=/lab1web/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHistoryZNOhub</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Перенаправляємо на <a href="/lab1web/">lab1web</a>...</p>
-    <script>window.location.href = "/lab1web/";</script>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">MyHistoryZNOHub</div>
+            <nav>
+                <ul>
+                    <li><a href="#timeline">Хронологія</a></li>
+                    <li><a href="#events">Події</a></li>
+                    <li><a href="#testing">Тестування</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="timeline" class="container">
+            <h2>Хронологія подій</h2>
+            <p class="section-desc">Ключові етапи становлення державності на одній шкалі.</p>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-item">
+                    <span class="date">988 рік</span>
+                    <span class="event">Хрещення Русі</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">1596 рік</span>
+                    <span class="event">Утворення УГКЦ</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">1648 рік</span>
+                    <span class="event">Козацька революція</span>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">1991 рік</span>
+                    <span class="event">Незалежність</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="container">
+            <h2>Історичні події в деталях</h2>
+            <div class="events-grid">
+                <article class="event-card">
+                    <img src="fotoone.jpg" alt="988">
+                    <h3>Хрещення Русі</h3>
+                    <p>Прийняття християнства князем Володимиром Великим, що стало цивілізаційним вибором для Київської Русі.</p>
+                    <button>Читати більше</button>
+                </article>
+                
+                <article class="event-card">
+                    <img src="fototwo.jpg" alt="1991">
+                    <h3>Незалежність України</h3>
+                    <p>24 серпня 1991 року Верховна Рада УРСР ухвалила Акт проголошення незалежності України.</p>
+                    <button>Читати більше</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="testing" class="container">
+            <h2>Перевір свої знання</h2>
+            <form class="quiz-form">
+                <div class="question">
+                    <p>1. У якому році було проголошено незалежність України?</p>
+                    <label><input type="radio" name="q1" value="1990"> 1990</label>
+                    <label><input type="radio" name="q1" value="1991"> 1991</label>
+                    <label><input type="radio" name="q1" value="1996"> 1996</label>
+                </div>
+                
+                <div class="question">
+                    <p>2. Хто хрестив Київську Русь?</p>
+                    <label><input type="radio" name="q2" value="volodymyr"> Володимир Великий</label>
+                    <label><input type="radio" name="q2" value="yaroslav"> Ярослав Мудрий</label>
+                </div>
+
+                <button type="submit" class="btn-submit">Завершити тест</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; MyHistoryZNOHub. Всі права захищені.</p>
+            <p>Контакти: ostrovska.sofiia.oi.2024@lpnu.ua | +380 97 657 94 52</p>
+        </div>
+    </footer>
+
 </body>
 </html>
