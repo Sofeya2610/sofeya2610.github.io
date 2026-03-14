@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHistoryZNOhub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">MyHistoryZNOHub</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#timeline">Хронологія</a></li>
+                    <li><a href="persons.html">Персоналії</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="timeline" class="container">
+            <h2>Хронологія подій</h2>
+            <p class="section-desc">Ключові етапи становлення державності на одній шкалі.</p>
+            
+            <div id="dynamic-timeline" class="timeline-wrapper"></div>
+        </section>
+
+        <section id="events" class="container">
+            <h2>Історичні події в деталях</h2>
+            <div class="events-grid">
+                <article class="event-card">
+                    <img src="fotoone.jpg" alt="998 рік">
+                    <h3>Хрещення Русі</h3>
+                    <p>Прийняття християнства князем Володимиром Великим, що стало цивілізаційним вибором для Київської Русі.</p>
+                </article>
+                
+                <article class="event-card">
+                    <img src="fototwo.jpg" alt="Незалежність України">
+                    <h3>Незалежність України</h3>
+                    <p>24 серпня 1991 року Верховна Рада УРСР ухвалила Акт проголошення незалежності України.</p>
+                </article>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                <button id="toggle-test-btn" class="btn-primary">Тест</button>
+            </div>
+        </section>
+
+        <section id="testing" class="container">
+            <h2>Перевір свої знання</h2>
+            <form class="quiz-form">
+                <div class="question">
+                    <p>1. У якому році було проголошено незалежність України?</p>
+                    <label><input type="radio" name="q1" value="1991"> 1991</label>
+                    <label><input type="radio" name="q1" value="1990"> 1990</label>
+                    <label><input type="radio" name="q1" value="1996"> 1996</label>
+                </div>
+                
+                <div class="question">
+                    <p>2. Хто хрестив Київську Русь?</p>
+                    <label><input type="radio" name="q2" value="volodymyr"> Володимир Великий</label>
+                    <label><input type="radio" name="q2" value="yaroslav"> Ярослав Мудрий</label>
+                </div>
+
+                <button type="button" class="btn-submit">Завершити тест</button>
+            </form>
+        </section>
+
+        <section id="feedback" class="container" style="margin-bottom: 40px;">
+            <h2>Залиште свій відгук про історичну подію</h2>
+            <form id="feedback-form" class="quiz-form">
+                <div class="question">
+                    <label for="name-input">Ваше ім'я:</label>
+                    <input type="text" id="name-input" style="width: 100%; padding: 8px; margin-top: 5px;">
+                </div>
+                <div class="question">
+                    <label for="comment-input">Коментар:</label>
+                    <textarea id="comment-input" rows="3" style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Надіслати</button>
+            </form>
+            
+            <div id="feedback-list" style="margin-top: 20px;"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 MyHistoryZNOHub. Всі права захищені.</p>
+            <p>Контакти: ostrovska.sofiia.oi.2024@lpnu.ua | +380 97 657 94 52</p>
+        </div>
+    </footer>
+
+    <div id="event-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Заголовок події</h2>
+            <p id="modal-desc">Детальний опис події з'явиться тут.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
